@@ -1,0 +1,90 @@
+/* Reset and base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: ui-serif, system-ui, fantasy;
+}
+
+/* ================================================================== */
+/* Body styling with background image and gradient overlay */
+body {
+    background-image: linear-gradient(rgba(53, 47, 51, 0.5), rgba(180, 178, 174, 0.6)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ================================================================== */
+/* Header with centered logo */
+header {
+    background-color: rgba(15, 14, 15, 0.9);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 48px;
+    height: 40px;
+    padding: 10px;
+}
+
+/* ================================================================== */
+/* Operations section centered on the page */
+.operations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 20px;
+}
+
+/* Transparent black box for car installment */
+.car-box {
+    width: 260px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0,0,0,0.9);
+}
+
+/* Car image inside the box */
+.car-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Car Installment label */
+.car-label {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+    .car-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .car-img {
+        width: 100%;
+        height: auto;
+    }
+}

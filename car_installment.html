@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank System</title>
+    <link rel="stylesheet" href="car_installment.css">
+</head>
+<body link="white" vlink="gray">
+    <header>
+        <img class ="header_logo" src="logo.png" alt="Bank Logo">
+    </header>
+    
+    <div class="container">            
+        <form class="form-container" method="POST" action="car_installment.asp">
+            <h2>Purchase a Car by installment</h2>
+            <br><br>
+            <input type="text" name="price" placeholder="Enter the car total Price" required>
+            <input type="text" name="salary" placeholder="Enter your salary" required>
+            <input type="text" name="amount" placeholder="Enter how much you prefere to pay" required>
+            <p>Select Payment perfered duration:</p>
+            <label>
+                <input type="radio" name = "months" value="12" required>
+                12 Months
+            </label>
+
+            <label>
+                <input type="radio" name = "months" value="24" required>
+                24 Months
+            </label>
+       
+         
+            <input type="submit" value="Submit">
+        </form>
+           
+      
+    </div>
+    
+</body>
+
+</html>
+
+
+
